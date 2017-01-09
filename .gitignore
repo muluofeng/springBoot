@@ -1,0 +1,9 @@
+\#*
+.*
+!.gitignore
+*.swp
+*~
+*.swo
+$.swn
+config/certi.php
+/app/base/f.php
