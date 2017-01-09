@@ -1,0 +1,47 @@
+ #Server settings
+server:
+  port: 8080
+  address: 127.0.0.1
+
+#spring配置
+spring:
+  jpa:
+    show-sql: true
+ # HTTP ENCODING
+  http:
+    encoding.charset: UTF-8
+    encoding.enable: true
+    encoding.force: true
+ #数据库配置
+  datasource:
+    driverClass: com.mysql.jdbc.Driver
+    url: jdbc:mysql://121.41.56.84:3306/springboot?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: Xing0830
+    auto-commit: true
+  freemarker:
+    template-loader-path: ["classpath:/templates", "classpath:/tags"]
+    charset: UTF-8
+    content-type: text/html; charset=utf-8
+    settings:
+      tag_syntax: auto_detect
+      default_encoding: UTF-8
+      output_encoding: UTF-8
+      locale: zh_CN
+      date_format: yyyy-MM-dd
+      time_format: HH:mm:ss
+      datetime_format: yyyy-MM-dd HH:mm:ss
+      classic_compatible: true
+      template_exception_handler: html_debug
+      auto_import: common.ftl as cm
+      template_update_delay: 0
+  resources:
+    static-locations: classpath:/static/
+  #mvc配置
+#  mvc:
+#    view.prefix: /WEB-INF/jsp/
+#    view.suffix: .jsp
+
+
+
+
