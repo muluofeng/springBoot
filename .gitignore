@@ -5,5 +5,4 @@
 *~
 *.swo
 $.swn
-config/certi.php
-/app/base/f.php
+target/*
