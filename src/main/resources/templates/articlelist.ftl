@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="[@spring.url value="/"/]">
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
@@ -24,8 +25,6 @@
                         <th>标题</th>
                         <th>内容</th>
                         <td>发表人</td>
-                    <#--<th>创建时间</th>-->
-                    <#--<th>最后登录时间</th>-->
                     </tr>
                     <tfoot>
                     <tr>
@@ -54,7 +53,7 @@
             processing:true,
             serverSide: true,
             ajax: {
-                url: 'articleList',
+                url: 'admin/articleList',
                 type: 'POST',
             },
 
