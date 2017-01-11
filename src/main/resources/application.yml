@@ -17,7 +17,7 @@ spring:
     driverClass: com.mysql.jdbc.Driver
     url: jdbc:mysql://121.41.56.84:3306/springboot?useUnicode=true&characterEncoding=utf-8
     username: root
-    password: Xing0830
+    password: root
     auto-commit: true
   freemarker:
     template-loader-path: ["classpath:/templates", "classpath:/tags"]

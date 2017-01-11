@@ -46,9 +46,10 @@ public class AdminDetailsService implements UserDetailsService {
 
     protected List<GrantedAuthority> loadUserAuthorities() {
         GrantedAuthority authority = new SimpleGrantedAuthority("ROLE_ADMIN");
+        GrantedAuthority authorityTwo=new SimpleGrantedAuthority("ROLE_TEST");
         List<GrantedAuthority> authorities =new ArrayList<GrantedAuthority>();
         authorities.add(authority);//如果角色多个可以添加多个
-
+        authorities.add(authorityTwo);
         return authorities;
     }
 }

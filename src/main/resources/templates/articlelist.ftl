@@ -25,6 +25,7 @@
                         <th>标题</th>
                         <th>内容</th>
                         <td>发表人</td>
+                        <td>操作</td>
                     </tr>
                     <tfoot>
                     <tr>
@@ -32,6 +33,7 @@
                         <th>标题</th>
                         <th>内容</th>
                         <td>发表人</td>
+                        <td>操作</td>
                     </tr>
                     </tfoot>
                     </thead>
@@ -66,8 +68,8 @@
                 {data: 'content'},
                 {data: 'user.name'}
             ],
-            "columnDefs": [{
-                "targets": [3],
+            columnDefs: [{
+                "targets": [4],
                 "data": null,
                 "defaultContent": "<button class='btn btn-default btn-sm'>删除</button>"
             }]
